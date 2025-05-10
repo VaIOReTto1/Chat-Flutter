@@ -27,7 +27,7 @@ class AttachedInfoElem {
   });
 
   AttachedInfoElem.fromJson(Map<String, dynamic> json) {
-    groupHasReadInfo = json['groupHasReadInfo'] == null ? null : groupHasReadInfo?.fromJson(json['groupHasReadInfo']);
+    groupHasReadInfo = json['groupHasReadInfo'] == null ? null : GroupHasReadInfo?.fromJson(json['groupHasReadInfo']);
     isPrivateChat = json['isPrivateChat'];
     hasReadTime = json['hasReadTime'];
     burnDuration = json['burnDuration'];

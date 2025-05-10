@@ -18,7 +18,7 @@ class FriendshipInfo {
 
   /// 将 FriendshipInfo 对象转换为 JSON 数据
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['userID'] = userID;
     data['result'] = result;
     return data;

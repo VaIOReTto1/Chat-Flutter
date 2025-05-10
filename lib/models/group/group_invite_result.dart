@@ -11,9 +11,9 @@ class GroupInviteResult {
   }
 
   Map<String, dynamic> toJson() {
-    final data = Map<String, dynamic>();
-    data['userID'] = this.userID;
-    data['result'] = this.result;
+    final data = <String, dynamic>{};
+    data['userID'] = userID;
+    data['result'] = result;
     return data;
   }
 }

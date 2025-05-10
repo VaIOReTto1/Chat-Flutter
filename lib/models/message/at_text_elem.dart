@@ -35,7 +35,7 @@ class AtTextElem {
     }
     isAtSelf = json['isAtSelf'];
     if (json['atUsersInfo'] is List) {
-      atUsersInfo = (json['atUsersInfo'] as List).map((e) => atUsersInfo?.fromJson(e)).toList();
+      atUsersInfo = (json['atUsersInfo'] as List).map((e) => AtUserInfo.fromJson(e)).toList();
     }
     quoteMessage = null != json['quoteMessage'] ? Message.fromJson(json['quoteMessage']) : null;
   }

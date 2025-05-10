@@ -10,6 +10,7 @@ class SearchFriendsInfo extends FriendInfo {
     relationship = json['relationship'];
   }
 
+  @override
   Map<String, dynamic> toJson() {
     final data = super.toJson();
     data['relationship'] = relationship;
